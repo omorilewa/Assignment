@@ -1,29 +1,23 @@
-
 module.exports = {
-findMinMax: function findMinMax(array) {
+findMinMax: function(myArray) {
 
-  var va =[];
+
+var min = myArray[0];
+var max = myArray[0];
+var total = 0;
+
+for (var i = 0; i < myArray.length; i++) {
   
-  for (var i = 0; i < array.length; i++) {
-      var val1 =array[0];
-      var val2 =1;
-      
-      
-      if (array[i] < val1) {
-        val1 = array[i];
-        va[0] = val1;
-      
-    } else{
-      va[0] = val1
-    }if (array[i] > val2) {
-       
-        val2 = array[i];
-        va[1] = val2;
-      }
-    }
-   
-
-  return va;
+  if (myArray[i] <= min) {min = myArray[i];}
+  if (myArray[i] >= max) {max = myArray[i];}
+  total += myArray[i]
+}
+if (min == max){
+var va =[min];
+}
+else{
+var va=[min,max];
+}
+return va;
 },
-
 }
