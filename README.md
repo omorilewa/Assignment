@@ -1,3 +1,3 @@
 # andela  Assignment
 
-Assignment fron andela
+Assignment from andela
